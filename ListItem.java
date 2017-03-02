@@ -1,8 +1,8 @@
 package abstractandinnerclasschalenge;
 
 public abstract class ListItem {
-    protected ListItem NextItem;
-    protected ListItem PreviousItem;
+    protected ListItem NextItem = null;
+    protected ListItem PreviousItem = null;
     
     protected Object value;
 

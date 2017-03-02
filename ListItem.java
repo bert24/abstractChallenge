@@ -1,8 +1,8 @@
 package abstractandinnerclasschalenge;
 
 public abstract class ListItem {
-    protected ListItem NextItem = null;
-    protected ListItem PreviousItem = null;
+    protected ListItem nextItem = null;
+    protected ListItem previousItem = null;
     
     protected Object value;
 
@@ -19,9 +19,9 @@ public abstract class ListItem {
     }
     
     abstract ListItem next();
-    abstract ListItem setNext();
+    abstract ListItem setNext(ListItem item);
     abstract ListItem previous();
-    abstract ListItem setPrevious();
+    abstract ListItem setPrevious(ListItem item);
     
     abstract int compareTo(ListItem item);
     
